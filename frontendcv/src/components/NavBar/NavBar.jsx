@@ -13,7 +13,7 @@ function NavBar() {
         <img src={images.logo} alt="logo" />
       </div>
       <ul className="app__navbar-links">
-        {["home", "about", "contact", "project", "skills"].map((item) => (
+        {["home", "about", "project", "skills", "contact"].map((item) => (
           <li className="app__flex p-text" key={`link-${item}`}>
             <div />
             <a href={`#${item}`}>{item}</a>
@@ -30,7 +30,7 @@ function NavBar() {
           >
             <HiX onClick={() => setToggle(false)} />
             <ul>
-              {["home", "about", "contact", "project", "skills"].map((item) => (
+              {["home", "about", "project", "skills", "contact"].map((item) => (
                 <li key={item}>
                   <a href={`#${item}`} onClick={() => setToggle(false)}>
                     {item}
