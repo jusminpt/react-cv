@@ -18,6 +18,10 @@ function Contact() {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = () => {
+    setLoading(true);
 
     const contact = {
       _type: "contact",
@@ -26,15 +30,15 @@ function Contact() {
       message: message,
     };
 
-    client.create(contact).then(() => {
-      setLoading(false);
-      setIsFormSubmmited(true);
-    });
+    client
+      .create(contact)
+      .then(() => {
+        setLoading(false);
+        setIsFormSubmmited(true);
+      })
+      .catch((err) => console.log(err));
   };
 
-  const handleSubmit = () => {
-    setLoading(true);
-  };
   return (
     <>
       <h2 className="head-text">Chat With me</h2>
@@ -79,8 +83,8 @@ function Contact() {
               onChange={handleChange}
             ></textarea>
           </div>
-          <button className="p-text" onChange={handleSubmit}>
-            {loading ? "Sending" : "Send Message"}
+          <button className="p-text" onClick={handleSubmit}>
+            {loading ? "Sending..." : "Send Message"}
           </button>
         </div>
       ) : (
