@@ -1,15 +1,35 @@
 import React from "react";
-import { BsTwitter } from "react-icons/bs";
+import { BsLinkedin } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 function SocialMedia() {
+  const openInNewTab = (url) => {
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
+
   return (
     <div className="app__social">
       <div>
-        <BsTwitter />
+        <MdEmail
+          onClick={() => {
+            window.location = "mailto:jpratheeppornsak@gmail.com";
+          }}
+        />
       </div>
       <div>
-        <FaGithub />
+        <BsLinkedin
+          onClick={() => {
+            openInNewTab("https://linkedin.com/in/jmjusmin-pt");
+          }}
+        />
+      </div>
+      <div>
+        <FaGithub
+          onClick={() => {
+            openInNewTab("https://github.com/jmjusmin");
+          }}
+        />
       </div>
     </div>
   );
