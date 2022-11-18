@@ -13,6 +13,9 @@
   "keywords": [
     "sanity"
   ],
+  "plugins": [
+    "order-documents"
+  ],
   "dependencies": {
     "@sanity/base": "^2.35.0",
     "@sanity/core": "^2.35.0",

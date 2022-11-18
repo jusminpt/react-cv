@@ -7,7 +7,7 @@
 :root {
   --font-base: "Roboto Mono", sans-serif;
 
-  --primary-color: #edf2f8;
+  --primary-color: rgb(246, 231, 216, 0.4);
   --secondary-color: #630000;
   --black-color: #030303;
   --lightGray-color: #e4e4e4;

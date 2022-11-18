@@ -24,6 +24,9 @@ function Header() {
         transition={{ duration: 0.5 }}
         className="app__header-info"
       >
+        <a href="http://www.freepik.com" className="app__header-design">
+          Designed by Freepik
+        </a>
         <div className="app__header-badge">
           <div className="badge-cmp app__flex">
             <span>👋</span>
