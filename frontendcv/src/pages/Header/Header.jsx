@@ -63,11 +63,13 @@ function Header() {
         transition={scaleVariants.transition}
         className="app__header-circles"
       >
-        {[images.redux, images.react, images.sass].map((circle, index) => (
-          <div className="circle-cmp app__flex" key={`circle-${index}`}>
-            <img src={circle} alt="circle" />
-          </div>
-        ))}
+        {[images.emojiHeart, images.emojistar, images.emojiAmazed].map(
+          (circle, index) => (
+            <div className="circle-cmp app__flex" key={`circle-${index}`}>
+              <img src={circle} alt="circle" />
+            </div>
+          )
+        )}
       </motion.div>
     </div>
   );

@@ -18,6 +18,11 @@ import sass from "../assets/sass.png";
 import typescript from "../assets/typescript.png";
 import vue from "../assets/vue.png";
 
+import emojiHi from "../assets/emogiHi.png";
+import emojiHeart from "../assets/emojiHeart.png";
+import emojistar from "../assets/emojiStar.png";
+import emojiAmazed from "../assets/EmojiAmazed.png";
+
 import about01 from "../assets/about01.png";
 import about02 from "../assets/about02.png";
 import about03 from "../assets/about03.png";
@@ -69,6 +74,10 @@ const images = {
   nb,
   skype,
   spotify,
+  emojiHi,
+  emojiHeart,
+  emojistar,
+  emojiAmazed,
 };
 
 export default images;
