@@ -107,6 +107,12 @@ function Works() {
               <p className="p-text" style={{ marginTop: 10 }}>
                 {work.description}
               </p>
+              <p className="p-text" style={{ marginTop: 10 }}>
+                <span style={({ fontWeight: "600" }, { color: "black" })}>
+                  Technology:
+                </span>
+                {work.tech}
+              </p>
               <div className="app__work-tag app__flex">
                 <p className="p-text">{work.tags[0]}</p>
               </div>
