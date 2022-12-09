@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import "./Header.scss";
 import { images } from "../../constants";
 import { AppWrap } from "../../wrapper";
+import { runFireworks } from "../../constants/utils";
 
 function Header() {
+  useEffect(() => {
+    runFireworks();
+  }, []);
+
   //set scaleVariants animation
   const scaleVariants = {
     whileInView: {
