@@ -22,9 +22,8 @@ function About() {
   return (
     <>
       <h2 className="head-text">
-        I know that <span>Good Dev</span>
-        <br />
-        means <span>Good Business</span>
+        I believe that <span>Life is</span>
+        <br />a lifelong <span>Learning</span>
       </h2>
 
       <div className="app__profiles">
