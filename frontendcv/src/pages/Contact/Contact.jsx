@@ -46,8 +46,8 @@ function Contact() {
       <div className="app__contact-cards">
         <div className="app__contact-card">
           <img src={images.email} alt="email-img" />
-          <a href="mailto:jpratheeppornsak@gmail.com" className="p-text">
-            jpratheeppornsak@gmail.com
+          <a href="mailto:pt.jusmin@gmail.com" className="p-text">
+            pt.jusmin@gmail.com
           </a>
         </div>
       </div>

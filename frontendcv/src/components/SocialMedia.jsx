@@ -13,14 +13,14 @@ function SocialMedia() {
       <div>
         <MdEmail
           onClick={() => {
-            window.location = "mailto:jpratheeppornsak@gmail.com";
+            window.location = "mailto:pt.jusmin@gmail.com";
           }}
         />
       </div>
       <div>
         <BsLinkedin
           onClick={() => {
-            openInNewTab("https://linkedin.com/in/jmjusmin-pt");
+            openInNewTab("https://www.linkedin.com/in/jusmin-pt");
           }}
         />
       </div>
